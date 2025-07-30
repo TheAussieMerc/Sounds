@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{E4AE3A632C8D58DE}Sounds/_SharedData/Signals/SimpleHelpers/Multiply_2_inputs_uh60_6.sig"
+ Configurations {
+  AudioSignalResourceClass PC {
+  }
+  AudioSignalResourceClass XBOX_ONE : PC {
+  }
+  AudioSignalResourceClass XBOX_SERIES : PC {
+  }
+  AudioSignalResourceClass PS4 : PC {
+  }
+  AudioSignalResourceClass PS5 : PC {
+  }
+  AudioSignalResourceClass HEADLESS : PC {
+  }
+ }
+}
