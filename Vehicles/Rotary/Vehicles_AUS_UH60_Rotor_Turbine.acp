@@ -28,13 +28,13 @@ AudioClass {
     3
    }
    inputvalues {
-    290 0
+    192 0
    }
    inputvaluesmin {
     0 0
    }
    inputvaluesmax {
-    290 1
+    400 1
    }
    path "{CAE55ED1E74539E7}Sounds/_SharedData/Signals/Vehicles/Vehicles_Air_RPMtoTime.sig"
   }
@@ -69,7 +69,7 @@ AudioClass {
     45 55 57 94 103 111
    }
    outputsport {
-    74
+    40 43 47 74
    }
    inputvalues {
     0 0 0 0 0 0
@@ -83,9 +83,61 @@ AudioClass {
    path "{D4A1555B02A77EDA}Sounds/_SharedData/Signals/Vehicles/Vehicles_Occlusion_OutsideVehicleSource.sig"
   }
   SignalClass {
+   id 66573
+   name "Signal Multiply"
+   tl -685.596 -138.461
+   res "{F07C266FDCFE110E}Sounds/_SharedData/Signals/SimpleHelpers/Multiply_2_inputs.sig"
+   conns {
+    IOPConnectionClass iopConnection {
+     port 1
+     conn {
+      ConnectionsClass connections {
+       id 9
+       links {
+        ConnectionClass connection {
+         id 94221
+         port 155
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 3
+     conn {
+      ConnectionsClass connections {
+       id 9
+       links {
+        ConnectionClass connection {
+         id 145421
+         port 9
+        }
+       }
+      }
+     }
+    }
+   }
+   inputsport {
+    1 3
+   }
+   outputsport {
+    2
+   }
+   inputvalues {
+    0 0
+   }
+   inputvaluesmin {
+    0 0
+   }
+   inputvaluesmax {
+    1 1
+   }
+   path "{F07C266FDCFE110E}Sounds/_SharedData/Signals/SimpleHelpers/Multiply_2_inputs.sig"
+  }
+  SignalClass {
    id 94221
    name "Signal Main Rotor"
-   tl -1941.517 -207.928
+   tl -1232 -1296
    res "{206CA91D532B7618}Sounds/_SharedData/Signals/Vehicles/Vehicles_Air_Helicopter_Rotor_Turbine.sig"
    conns {
     IOPConnectionClass iopConnection {
@@ -110,13 +162,13 @@ AudioClass {
     5 83 96 105 152 154 155 158 234 239 242 280 281 294 295 304 310 311 329 334 353 364 365 375 385
    }
    inputvalues {
-    1 0 0 0 17000 0 1 50 0 0 0 0 0 1 0 0
+    1 0 0 0 22000 0 1 0 0 0 0 0 0 0 0 0
    }
    inputvaluesmin {
     0 -20 0 0 0 0 0 -50 0 0 0 0 0 0 0 0
    }
    inputvaluesmax {
-    1 20 40 1 17000 1 1 50 1 5 5 5 1 1 1 1
+    1 20 40 1 22000 1 1 50 1 5 5 5 1 1 1 1
    }
    path "{206CA91D532B7618}Sounds/_SharedData/Signals/Vehicles/Vehicles_Air_Helicopter_Rotor_Turbine.sig"
   }
@@ -145,13 +197,13 @@ AudioClass {
   SignalClass {
    id 116749
    name "Signal Occlusion No Cabin Att"
-   tl -324.202 -728.012
+   tl -249.679 -714.324
    res "{486BCE6E22132793}Sounds/_SharedData/Signals/Vehicles/Vehicles_Occlusion_OutsideVehicleSourceNoCabinAttenuation.sig"
    inputsport {
     45 55 57 101 110 115
    }
    outputsport {
-    67
+    2 47 67
    }
    inputvalues {
     0 0 0 0 0 0
@@ -189,7 +241,7 @@ AudioClass {
   SignalClass {
    id 145421
    name "Signal Spatiality"
-   tl -1347.717 405.875
+   tl -256 -1936
    res "{7B73D2ADA6A4AAD7}Sounds/_SharedData/Signals/Vehicles/Vehicles_Engine_Spatiality.sig"
    inputsport {
     13
@@ -207,548 +259,6 @@ AudioClass {
     1
    }
    path "{7B73D2ADA6A4AAD7}Sounds/_SharedData/Signals/Vehicles/Vehicles_Engine_Spatiality.sig"
-  }
-  SignalClass {
-   id 154637
-   name "Signal 151a"
-   tl -764.255 2148.09
-   res "{F07C266FDCFE110F}Sounds/_SharedData/Signals/SimpleHelpers/Multiply_2_inputs.sig"
-   conns {
-    IOPConnectionClass iopConnection {
-     port 1
-     conn {
-      ConnectionsClass connections {
-       id 9
-       links {
-        ConnectionClass connection {
-         id 94221
-         port 375
-        }
-       }
-      }
-     }
-    }
-    IOPConnectionClass iopConnection {
-     port 3
-     conn {
-      ConnectionsClass connections {
-       id 9
-       links {
-        ConnectionClass connection {
-         id 164877
-         port 18
-        }
-       }
-      }
-     }
-    }
-   }
-   inputsport {
-    1 3
-   }
-   outputsport {
-    2
-   }
-   inputvalues {
-    0 0
-   }
-   inputvaluesmin {
-    0 0
-   }
-   inputvaluesmax {
-    1 1
-   }
-   path "{F07C266FDCFE110F}Sounds/_SharedData/Signals/SimpleHelpers/Multiply_2_inputs.sig"
-  }
-  SignalClass {
-   id 158733
-   name "Signal 155a"
-   tl -802.058 60.302
-   res "{7A7779AB57ECD38D}Sounds/_SharedData/Signals/SimpleHelpers/Multiply_2_inputs_uh60_2.sig"
-   conns {
-    IOPConnectionClass iopConnection {
-     port 1
-     conn {
-      ConnectionsClass connections {
-       id 9
-       links {
-        ConnectionClass connection {
-         id 94221
-         port 155
-        }
-       }
-      }
-     }
-    }
-    IOPConnectionClass iopConnection {
-     port 3
-     conn {
-      ConnectionsClass connections {
-       id 9
-       links {
-        ConnectionClass connection {
-         id 164877
-         port 18
-        }
-       }
-      }
-     }
-    }
-   }
-   inputsport {
-    1 3
-   }
-   outputsport {
-    2
-   }
-   inputvalues {
-    0 0
-   }
-   inputvaluesmin {
-    0 0
-   }
-   inputvaluesmax {
-    1 1
-   }
-   path "{7A7779AB57ECD38D}Sounds/_SharedData/Signals/SimpleHelpers/Multiply_2_inputs_uh60_2.sig"
-  }
-  SignalClass {
-   id 160781
-   name "Signal 157a"
-   tl -1072.235 -866.372
-   res "{0D7D1123A34E3CFD}Sounds/_SharedData/Signals/SimpleHelpers/Multiply_2_inputs_uh60_3.sig"
-   conns {
-    IOPConnectionClass iopConnection {
-     port 1
-     conn {
-      ConnectionsClass connections {
-       id 9
-       links {
-        ConnectionClass connection {
-         id 94221
-         port 281
-        }
-       }
-      }
-     }
-    }
-    IOPConnectionClass iopConnection {
-     port 3
-     conn {
-      ConnectionsClass connections {
-       id 9
-       links {
-        ConnectionClass connection {
-         id 164877
-         port 18
-        }
-       }
-      }
-     }
-    }
-   }
-   inputsport {
-    1 3
-   }
-   outputsport {
-    2
-   }
-   inputvalues {
-    0 0
-   }
-   inputvaluesmin {
-    0 0
-   }
-   inputvaluesmax {
-    1 1
-   }
-   path "{0D7D1123A34E3CFD}Sounds/_SharedData/Signals/SimpleHelpers/Multiply_2_inputs_uh60_3.sig"
-  }
-  SignalClass {
-   id 162829
-   name "Signal 159a"
-   tl -1064.827 -1136.565
-   res "{0ABAEB72C5C8863E}Sounds/_SharedData/Signals/SimpleHelpers/Multiply_2_inputs_uh60_4.sig"
-   conns {
-    IOPConnectionClass iopConnection {
-     port 1
-     conn {
-      ConnectionsClass connections {
-       id 9
-       links {
-        ConnectionClass connection {
-         id 94221
-         port 280
-        }
-       }
-      }
-     }
-    }
-    IOPConnectionClass iopConnection {
-     port 3
-     conn {
-      ConnectionsClass connections {
-       id 9
-       links {
-        ConnectionClass connection {
-         id 164877
-         port 18
-        }
-       }
-      }
-     }
-    }
-   }
-   inputsport {
-    1 3
-   }
-   outputsport {
-    2
-   }
-   inputvalues {
-    0 0
-   }
-   inputvaluesmin {
-    0 0
-   }
-   inputvaluesmax {
-    1 1
-   }
-   path "{0ABAEB72C5C8863E}Sounds/_SharedData/Signals/SimpleHelpers/Multiply_2_inputs_uh60_4.sig"
-  }
-  SignalClass {
-   id 164877
-   name "Signal 161"
-   tl -1302.759 -177.722
-   res "{A8476DC80B021B39}Sounds/_SharedData/Signals/Vehicles/Vehicles_Engine_Spatiality_UH60_Cockpit.sig"
-   inputsport {
-    13 15
-   }
-   outputsport {
-    7 9 12 18 19
-   }
-   inputvalues {
-    0 0
-   }
-   inputvaluesmin {
-    0 0
-   }
-   inputvaluesmax {
-    1 1
-   }
-   path "$profile:.tmp/AudioEditor/#A8476DC80B021B39#Vehicles_Engine_Spatiality_UH60_Cockpit.sig"
-  }
-  SignalClass {
-   id 165901
-   name "Signal 155b"
-   tl -801.416 164.17
-   res "{7DB083FA316A694E}Sounds/_SharedData/Signals/SimpleHelpers/Multiply_2_inputs_uh60_5.sig"
-   conns {
-    IOPConnectionClass iopConnection {
-     port 1
-     conn {
-      ConnectionsClass connections {
-       id 9
-       links {
-        ConnectionClass connection {
-         id 94221
-         port 155
-        }
-       }
-      }
-     }
-    }
-    IOPConnectionClass iopConnection {
-     port 3
-     conn {
-      ConnectionsClass connections {
-       id 9
-       links {
-        ConnectionClass connection {
-         id 164877
-         port 19
-        }
-       }
-      }
-     }
-    }
-   }
-   inputsport {
-    1 3
-   }
-   outputsport {
-    2
-   }
-   inputvalues {
-    0 0
-   }
-   inputvaluesmin {
-    0 0
-   }
-   inputvaluesmax {
-    1 1
-   }
-   path "{7DB083FA316A694E}Sounds/_SharedData/Signals/SimpleHelpers/Multiply_2_inputs_uh60_5.sig"
-  }
-  SignalClass {
-   id 166925
-   name "Signal 157b"
-   tl -1072.212 -770.51
-   res "{E4AE3A632C8D58DE}Sounds/_SharedData/Signals/SimpleHelpers/Multiply_2_inputs_uh60_6.sig"
-   conns {
-    IOPConnectionClass iopConnection {
-     port 1
-     conn {
-      ConnectionsClass connections {
-       id 9
-       links {
-        ConnectionClass connection {
-         id 94221
-         port 281
-        }
-       }
-      }
-     }
-    }
-    IOPConnectionClass iopConnection {
-     port 3
-     conn {
-      ConnectionsClass connections {
-       id 9
-       links {
-        ConnectionClass connection {
-         id 164877
-         port 19
-        }
-       }
-      }
-     }
-    }
-   }
-   inputsport {
-    1 3
-   }
-   outputsport {
-    2
-   }
-   inputvalues {
-    0 0
-   }
-   inputvaluesmin {
-    0 0
-   }
-   inputvaluesmax {
-    1 1
-   }
-   path "{E4AE3A632C8D58DE}Sounds/_SharedData/Signals/SimpleHelpers/Multiply_2_inputs_uh60_6.sig"
-  }
-  SignalClass {
-   id 167949
-   name "Signal 159b"
-   tl -1064.348 -1041.739
-   res "{93A452EBD82FB7AE}Sounds/_SharedData/Signals/SimpleHelpers/Multiply_2_inputs_uh60_7.sig"
-   conns {
-    IOPConnectionClass iopConnection {
-     port 1
-     conn {
-      ConnectionsClass connections {
-       id 9
-       links {
-        ConnectionClass connection {
-         id 94221
-         port 280
-        }
-       }
-      }
-     }
-    }
-    IOPConnectionClass iopConnection {
-     port 3
-     conn {
-      ConnectionsClass connections {
-       id 9
-       links {
-        ConnectionClass connection {
-         id 164877
-         port 19
-        }
-       }
-      }
-     }
-    }
-   }
-   inputsport {
-    1 3
-   }
-   outputsport {
-    2
-   }
-   inputvalues {
-    0 0
-   }
-   inputvaluesmin {
-    0 0
-   }
-   inputvaluesmax {
-    1 1
-   }
-   path "{93A452EBD82FB7AE}Sounds/_SharedData/Signals/SimpleHelpers/Multiply_2_inputs_uh60_7.sig"
-  }
-  SignalClass {
-   id 168973
-   name "Signal 151b"
-   tl -766 2243.85
-   res "{EB21CEC1E1802D58}Sounds/_SharedData/Signals/SimpleHelpers/Multiply_2_inputs_uh60_8.sig"
-   conns {
-    IOPConnectionClass iopConnection {
-     port 1
-     conn {
-      ConnectionsClass connections {
-       id 9
-       links {
-        ConnectionClass connection {
-         id 94221
-         port 375
-        }
-       }
-      }
-     }
-    }
-    IOPConnectionClass iopConnection {
-     port 3
-     conn {
-      ConnectionsClass connections {
-       id 9
-       links {
-        ConnectionClass connection {
-         id 164877
-         port 19
-        }
-       }
-      }
-     }
-    }
-   }
-   inputsport {
-    1 3
-   }
-   outputsport {
-    2
-   }
-   inputvalues {
-    0 0
-   }
-   inputvaluesmin {
-    0 0
-   }
-   inputvaluesmax {
-    1 1
-   }
-   path "{EB21CEC1E1802D58}Sounds/_SharedData/Signals/SimpleHelpers/Multiply_2_inputs_uh60_8.sig"
-  }
-  SignalClass {
-   id 169997
-   name "Signal 166a"
-   tl -1059.213 -604.396
-   res "{9C2BA6491522C228}Sounds/_SharedData/Signals/SimpleHelpers/Multiply_2_inputs_uh60_9.sig"
-   conns {
-    IOPConnectionClass iopConnection {
-     port 3
-     conn {
-      ConnectionsClass connections {
-       id 9
-       links {
-        ConnectionClass connection {
-         id 164877
-         port 19
-        }
-       }
-      }
-     }
-    }
-    IOPConnectionClass iopConnection {
-     port 1
-     conn {
-      ConnectionsClass connections {
-       id 9
-       links {
-        ConnectionClass connection {
-         id 94221
-         port 239
-        }
-       }
-      }
-     }
-    }
-   }
-   inputsport {
-    1 3
-   }
-   outputsport {
-    2
-   }
-   inputvalues {
-    0 0
-   }
-   inputvaluesmin {
-    0 0
-   }
-   inputvaluesmax {
-    1 1
-   }
-   path "{9C2BA6491522C228}Sounds/_SharedData/Signals/SimpleHelpers/Multiply_2_inputs_uh60_9.sig"
-  }
-  SignalClass {
-   id 171021
-   name "Signal 188b"
-   tl -1048.567 -408.431
-   res "{845A92D2C2FFC0A9}Sounds/_SharedData/Signals/SimpleHelpers/Multiply_2_inputs_uh60_10.sig"
-   conns {
-    IOPConnectionClass iopConnection {
-     port 3
-     conn {
-      ConnectionsClass connections {
-       id 9
-       links {
-        ConnectionClass connection {
-         id 164877
-         port 19
-        }
-       }
-      }
-     }
-    }
-    IOPConnectionClass iopConnection {
-     port 1
-     conn {
-      ConnectionsClass connections {
-       id 9
-       links {
-        ConnectionClass connection {
-         id 94221
-         port 242
-        }
-       }
-      }
-     }
-    }
-   }
-   inputsport {
-    1 3
-   }
-   outputsport {
-    2
-   }
-   inputvalues {
-    0 0
-   }
-   inputvaluesmin {
-    0 0
-   }
-   inputvaluesmax {
-    1 1
-   }
-   path "{845A92D2C2FFC0A9}Sounds/_SharedData/Signals/SimpleHelpers/Multiply_2_inputs_uh60_10.sig"
   }
  }
  filters {
@@ -861,7 +371,7 @@ AudioClass {
    id 27657
    name "SOUND_MAINROTOR_LP"
    version 5
-   tl 213.16 -1055.74
+   tl 192 -1024
    ins {
     ConnectionsClass connections {
      id 0
@@ -898,7 +408,7 @@ AudioClass {
    id 31753
    name "SOUND_MAINROTOR_WHIZZ"
    version 5
-   tl 380.647 -1535.847
+   tl 170.766 -1579.952
    ins {
     ConnectionsClass connections {
      id 0
@@ -956,7 +466,7 @@ AudioClass {
        port 65
       }
       ConnectionClass connection {
-       id 163844
+       id 65540
        port 65
       }
      }
@@ -1009,7 +519,7 @@ AudioClass {
    id 99337
    name "SOUND_ENGINE_ON"
    version 5
-   tl 168.766 1350.022
+   tl 168.766 1350.778
    ins {
     ConnectionsClass connections {
      id 3
@@ -1236,10 +746,6 @@ AudioClass {
        id 49156
        port 65
       }
-      ConnectionClass connection {
-       id 157700
-       port 65
-      }
      }
     }
    }
@@ -1343,18 +849,6 @@ AudioClass {
       }
       ConnectionClass connection {
        id 126980
-       port 65
-      }
-      ConnectionClass connection {
-       id 147460
-       port 65
-      }
-      ConnectionClass connection {
-       id 159748
-       port 65
-      }
-      ConnectionClass connection {
-       id 161796
        port 65
       }
      }
@@ -1461,7 +955,7 @@ AudioClass {
    }
    path "{B764D803219C775E}Sounds/FinalMix.afm"
    inputs {
-    "WPN_Handling" "WPN_Shots" "WPN_Explosions" "WNP_BulletHits" "CHAR" "ENV_AMB_2D" "VEH_Animations" "Impacts" "Dialog" "Music" "ENV_Doors" "VEH_Engine" "VEH_Tires" "VON" "SFX" "SFX_Reverb" "VON_Reverb" "Dialog_Reverb" "Impacts_EXT" "ENV_AMB_3D" "WPN_SonicCracks" "CHAR_Gear" "PA" "SFX_Reverb_Exterior" "UI" "ENV_AMB_3D_Reverb_Exterior" "SFX_Direct" "SFX_Reverb_Small" "SFX_Reverb_Medium" "SFX_Reverb_Large" "WPN_Shots_Player" "Dialog_Reverb_Small" "Dialog_Reverb_Medium" "Dialog_Reverb_Large" "WPN_TravelingProjectile" "Dialog_Delay_Exterior" "SFX_Reverb_InCabin"
+    "WPN_Handling" "WPN_Shots" "WPN_Explosions" "WNP_BulletHits" "CHAR" "ENV_AMB_2D" "VEH_Animations" "Impacts" "Dialog" "Music" "ENV_Doors" "VEH_Engine" "VEH_Tires" "VON" "SFX" "SFX_Reverb_OBSOLETE" "VON_Reverb" "Dialog_Reverb" "Impacts_EXT" "ENV_AMB_3D" "WPN_SonicCracks" "CHAR_Gear" "PA" "SFX_Reverb_Exterior" "UI" "ENV_AMB_3D_Reverb_Exterior" "SFX_Direct" "SFX_Reverb_Small" "SFX_Reverb_Medium" "SFX_Reverb_Large" "WPN_Shots_Player" "Dialog_Reverb_Small" "Dialog_Reverb_Medium" "Dialog_Reverb_Large" "WPN_TravelingProjectile" "Dialog_Delay_Exterior" "SFX_Reverb_InCabin"
    }
   }
  }
@@ -1470,7 +964,7 @@ AudioClass {
    id 108556
    name "Constant Silence"
    version 5
-   tl -890.617 1444.504
+   tl -713.072 1413.119
    "Constant values" {
     IOPConstantsValueClass Silence {
      Key "Silence"
@@ -1483,7 +977,7 @@ AudioClass {
    id 138252
    name "Constant Zero"
    version 5
-   tl -2151.672 62.113
+   tl -1424 -944
    "Constant values" {
     IOPConstantsValueClass ZERO {
      Key "ZERO"
@@ -1497,7 +991,7 @@ AudioClass {
    id 25618
    name "Shader Main Rotor"
    version 5
-   tl -25.388 -955.23
+   tl -32 -1024
    ins {
     ConnectionsClass connections {
      id 0
@@ -1727,10 +1221,6 @@ AudioClass {
        id 102404
        port 65
       }
-      ConnectionClass connection {
-       id 155652
-       port 65
-      }
      }
     }
    }
@@ -1823,10 +1313,6 @@ AudioClass {
      links {
       ConnectionClass connection {
        id 111620
-       port 65
-      }
-      ConnectionClass connection {
-       id 156676
        port 65
       }
      }
@@ -2065,10 +1551,6 @@ AudioClass {
        id 133124
        port 65
       }
-      ConnectionClass connection {
-       id 150532
-       port 65
-      }
      }
     }
    }
@@ -2267,27 +1749,47 @@ AudioClass {
    pu {
     3 0
    }
-   Volume -21
-   Pitch 3
-   "Fade in time" 1500
+   Volume -16
+   Pitch 1
    Samples {
     AudioBankSampleClass Sample {
-     Filename "{07E42994F3C44B2A}Sounds/Vehicles/Rotary/Samples/AUS_UH60_Rotor_Startup.wav"
+     Filename "{D8CC02EEBEF3B72A}Sounds/Vehicles/Helicopters/Mi-8MT/Samples/Rotor_Hi_1.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{41D2BB77A31486BA}Sounds/Vehicles/Helicopters/Mi-8MT/Samples/Rotor_Hi_2.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{36D8D3FF57B669CA}Sounds/Vehicles/Helicopters/Mi-8MT/Samples/Rotor_Hi_3.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{311F29AE3130D309}Sounds/Vehicles/Helicopters/Mi-8MT/Samples/Rotor_Hi_4.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{46154126C5923C79}Sounds/Vehicles/Helicopters/Mi-8MT/Samples/Rotor_Hi_5.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{DF0BF8BFD8750DE9}Sounds/Vehicles/Helicopters/Mi-8MT/Samples/Rotor_Hi_6.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{A80190372CD7E299}Sounds/Vehicles/Helicopters/Mi-8MT/Samples/Rotor_Hi_7.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{D0840C1D1578786F}Sounds/Vehicles/Helicopters/Mi-8MT/Samples/Rotor_Hi_8.wav"
     }
    }
   }
   BankLocalClass {
    id 49156
-   name "Turbine - Exterior"
+   name "Noise"
    version 7
-   tl -528.575 284.312
+   tl -497.762 278.343
    ins {
     ConnectionsClass connections {
      id 0
      links {
       ConnectionClass connection {
-       id 165901
-       port 2
+       id 94221
+       port 155
       }
      }
     }
@@ -2307,14 +1809,14 @@ AudioClass {
    pu {
     3 0
    }
-   Volume -6
+   Volume 7
    "Loop count" 255
    "Infinite loop" 1
    "Termination Fade Out" 3000
    "Fade in time" 1000
    Samples {
     AudioBankSampleClass Sample {
-     Filename "{8B9B33CF3C03A97E}Sounds/Vehicles/Rotary/Samples/AUS_UH60_Engine_Loop.wav"
+     Filename "{052CCD086CC453EC}Sounds/Vehicles/Helicopters/UH1H/Samples/Vehicles_UH1H_Turbine_Noise_LP.wav"
     }
    }
   }
@@ -2349,7 +1851,7 @@ AudioClass {
    pu {
     3 0
    }
-   Volume -54
+   Volume 2
    Pitch 2
    "Loop count" 255
    "Infinite loop" 1
@@ -2362,17 +1864,49 @@ AudioClass {
    }
   }
   BankLocalClass {
-   id 72708
-   name "Main Rotor Distant"
+   id 65540
+   name "Cabin"
    version 7
-   tl -765.496 -729.856
+   tl -495.619 -136.397
    ins {
     ConnectionsClass connections {
      id 0
      links {
       ConnectionClass connection {
-       id 169997
+       id 66573
        port 2
+      }
+     }
+    }
+   }
+   pi {
+    1 0
+   }
+   pu {
+    1 0
+   }
+   "Loop count" 255
+   "Infinite loop" 1
+   "Termination Fade Out" 3000
+   "Fade in time" 1000
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{AF584FB55D70D0EE}Sounds/Vehicles/Helicopters/UH1H/Samples/Vehicles_UH1H_Cabin_LP.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 72708
+   name "Main Rotor Distant"
+   version 7
+   tl -768 -848
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 94221
+       port 239
       }
      }
     }
@@ -2398,7 +1932,7 @@ AudioClass {
    "Termination Fade Out" 300
    Samples {
     AudioBankSampleClass Sample {
-     Filename "{8816DC3D48597B04}Sounds/Vehicles/Rotary/Samples/AUS_UH60_RotorPlus_Dist_Loop.wav"
+     Filename "{50EB4A8AB189AC7E}Sounds/Vehicles/Helicopters/UH1H/Samples/Vehicles_UH1H_MainRotor_Distant_LP.wav"
     }
    }
   }
@@ -2418,14 +1952,14 @@ AudioClass {
    id 79876
    name "Main Rotor Distant Fly Away"
    version 7
-   tl -768.954 -384.14
+   tl -768 -736
    ins {
     ConnectionsClass connections {
      id 0
      links {
       ConnectionClass connection {
-       id 171021
-       port 2
+       id 94221
+       port 242
       }
      }
     }
@@ -2451,22 +1985,22 @@ AudioClass {
    "Termination Fade Out" 300
    Samples {
     AudioBankSampleClass Sample {
-     Filename "{8816DC3D48597B04}Sounds/Vehicles/Rotary/Samples/AUS_UH60_RotorPlus_Dist_Loop.wav"
+     Filename "{808853A39D359E16}Sounds/Vehicles/Helicopters/UH1H/Samples/Vehicles_UH1H_MainRotor_Distant_FlyAway_LP.wav"
     }
    }
   }
   BankLocalClass {
    id 90116
-   name "Main Rotor Off Load - Exterior"
+   name "Main Rotor Off Load"
    version 7
-   tl -768.756 -1119.607
+   tl -768 -1168
    ins {
     ConnectionsClass connections {
      id 0
      links {
       ConnectionClass connection {
-       id 167949
-       port 2
+       id 94221
+       port 280
       }
      }
     }
@@ -2486,27 +2020,28 @@ AudioClass {
    pu {
     3 0
    }
+   Volume 4
    "Loop count" 255
    "Infinite loop" 1
    "Termination Fade Out" 300
    Samples {
     AudioBankSampleClass Sample {
-     Filename "{E70A0DE1DE73F031}Sounds/Vehicles/Rotary/Samples/AUS_UH60_Rotor_Loop.wav"
+     Filename "{50969D03BAC82B1F}Sounds/Vehicles/Helicopters/UH1H/Samples/Vehicles_UH1H_MainRotor_OffLoad_LP.wav"
     }
    }
   }
   BankLocalClass {
    id 91140
-   name "Main Rotor On Load - Exterior"
+   name "Main Rotor On Load"
    version 7
-   tl -764.408 -919.932
+   tl -768 -1056
    ins {
     ConnectionsClass connections {
      id 0
      links {
       ConnectionClass connection {
-       id 166925
-       port 2
+       id 94221
+       port 281
       }
      }
     }
@@ -2526,12 +2061,13 @@ AudioClass {
    pu {
     3 0
    }
+   Volume 4
    "Loop count" 255
    "Infinite loop" 1
    "Termination Fade Out" 300
    Samples {
     AudioBankSampleClass Sample {
-     Filename "{7EE24561836DCCE7}Sounds/Vehicles/Rotary/Samples/AUS_UH60_RotorPlus_Loop.wav"
+     Filename "{E7CA64282EC3B7B6}Sounds/Vehicles/Helicopters/UH1H/Samples/Vehicles_UH1H_MainRotor_OnLoad_LP.wav"
     }
    }
   }
@@ -2549,19 +2085,10 @@ AudioClass {
   }
   BankLocalClass {
    id 102404
-   name "Engine On - Cockpit"
+   name "Engine On"
    version 7
-   tl -500.048 1273.016
+   tl -499.048 1352.016
    ins {
-    ConnectionsClass connections {
-     id 0
-     links {
-      ConnectionClass connection {
-       id 145421
-       port 9
-      }
-     }
-    }
     ConnectionsClass connections {
      id 5
      links {
@@ -2573,48 +2100,40 @@ AudioClass {
     }
    }
    pi {
-    33 0
-   }
-   Volume -6
-   Samples {
-    AudioBankSampleClass Sample {
-     Filename "{B8AABF83195383DE}Sounds/Vehicles/Rotary/Samples/In Cockpit/AUS_UH60_Cpt_Startup.wav"
-    }
-   }
-  }
-  BankLocalClass {
-   id 111620
-   name "Engine Off - Cockpit"
-   version 7
-   tl -496.048 1589.948
-   ins {
-    ConnectionsClass connections {
-     id 0
-     links {
-      ConnectionClass connection {
-       id 145421
-       port 9
-      }
-     }
-    }
-    ConnectionsClass connections {
-     id 5
-     links {
-      ConnectionClass connection {
-       id 108556
-       port 1
-      }
-     }
-    }
-   }
-   pi {
-    33 0
+    32 0
    }
    Volume -9
    Pitch -2
    Samples {
     AudioBankSampleClass Sample {
-     Filename "{D2367C208BEE6F88}Sounds/Vehicles/Rotary/Samples/In Cockpit/AUS_UH60_Cpt_Shutdown.wav"
+     Filename "{BED8DC017DE7217C}Sounds/Vehicles/Helicopters/UH1H/Samples/Vehicles_UH1H_Engine_On.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 111620
+   name "Engine Off"
+   version 7
+   tl -499.048 1508.948
+   ins {
+    ConnectionsClass connections {
+     id 5
+     links {
+      ConnectionClass connection {
+       id 108556
+       port 1
+      }
+     }
+    }
+   }
+   pi {
+    32 0
+   }
+   Volume -9
+   Pitch -2
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{AEA28388F4059405}Sounds/Vehicles/Helicopters/UH1H/Samples/Vehicles_UH1H_Engine_Off.wav"
     }
    }
   }
@@ -2622,7 +2141,7 @@ AudioClass {
    id 115716
    name "GearBox Damaged"
    version 7
-   tl -510.273 -506.484
+   tl -497.048 -485.324
    ins {
     ConnectionsClass connections {
      id 0
@@ -2655,7 +2174,7 @@ AudioClass {
    id 118788
    name "Turbine Damaged"
    version 7
-   tl -490.862 600.929
+   tl -497.762 428.429
    ins {
     ConnectionsClass connections {
      id 0
@@ -2765,7 +2284,7 @@ AudioClass {
    id 126980
    name "Main Rotor Damaged"
    version 7
-   tl -768 -1380.567
+   tl -768 -1280
    ins {
     ConnectionsClass connections {
      id 0
@@ -2792,30 +2311,28 @@ AudioClass {
    pu {
     3 0
    }
-   Pitch -1
+   Volume 5
    "Loop count" 255
    "Infinite loop" 1
    "Termination Fade Out" 300
-   "Fade in time" 550
-   "Fade out time" 250
    Samples {
     AudioBankSampleClass Sample {
-     Filename "{E70A0DE1DE73F031}Sounds/Vehicles/Rotary/Samples/AUS_UH60_Rotor_Loop.wav"
+     Filename "{0E7E7834362C5344}Sounds/Vehicles/Helicopters/Mi-8MT/Samples/Vehicles_Mi-8MT_MainRotor_Damaged_LP.wav"
     }
    }
   }
   BankLocalClass {
    id 133124
-   name "Tail Rotor - External"
+   name "Tail Rotor"
    version 7
-   tl -505.524 2239.149
+   tl -504.374 2160.949
    ins {
     ConnectionsClass connections {
      id 0
      links {
       ConnectionClass connection {
-       id 168973
-       port 2
+       id 94221
+       port 375
       }
      }
     }
@@ -2835,309 +2352,7 @@ AudioClass {
    "Fade in time" 2000
    Samples {
     AudioBankSampleClass Sample {
-     Filename "{C514475B200A79F3}Sounds/Vehicles/Rotary/Samples/AUS_UH60_Rotor_TailPlus_Loop.wav"
-    }
-   }
-  }
-  BankLocalClass {
-   id 147460
-   name "Main Rotor Airflow Distant"
-   version 7
-   tl -764.643 -622.097
-   ins {
-    ConnectionsClass connections {
-     id 0
-     links {
-      ConnectionClass connection {
-       id 169997
-       port 2
-      }
-     }
-    }
-    ConnectionsClass connections {
-     id 1
-     links {
-      ConnectionClass connection {
-       id 94221
-       port 105
-      }
-     }
-    }
-   }
-   pi {
-    3 0
-   }
-   pu {
-    3 0
-   }
-   Volume 6
-   "Loop count" 255
-   "Infinite loop" 1
-   "Termination Fade Out" 300
-   Samples {
-    AudioBankSampleClass Sample {
-     Filename "{FE281BFE3A28C6C9}Sounds/Vehicles/Rotary/Samples/AUS_UH60_Airflow_Dist_Loop.wav"
-    }
-   }
-  }
-  BankLocalClass {
-   id 150532
-   name "Tail Rotor - Cockpit"
-   version 7
-   tl -507.15 2162
-   ins {
-    ConnectionsClass connections {
-     id 0
-     links {
-      ConnectionClass connection {
-       id 154637
-       port 2
-      }
-     }
-    }
-   }
-   pi {
-    1 0
-   }
-   pu {
-    1 0
-   }
-   Volume -10
-   Pitch 1
-   "Loop count" 255
-   "Infinite loop" 1
-   "Termination Fade Out" 3000
-   "Random start offset" 1
-   "Fade in time" 2000
-   Samples {
-    AudioBankSampleClass Sample {
-     Filename "{BC5AF8B6ACF4BB49}Sounds/Vehicles/Rotary/Samples/In Cockpit/AUS_UH60_Cpt_RotorTailPlus_Loop.wav"
-    }
-   }
-  }
-  BankLocalClass {
-   id 155652
-   name "Engine On - Exterior"
-   version 7
-   tl -501.323 1368.62
-   ins {
-    ConnectionsClass connections {
-     id 5
-     links {
-      ConnectionClass connection {
-       id 108556
-       port 1
-      }
-     }
-    }
-   }
-   pi {
-    33 0
-   }
-   Volume -9
-   Pitch -2
-   Samples {
-    AudioBankSampleClass Sample {
-     Filename "{093FAD07362CCA93}Sounds/Vehicles/Rotary/Samples/AUS_UH60_Startup_Initial.wav"
-    }
-   }
-  }
-  BankLocalClass {
-   id 156676
-   name "Engine Off - Exterior"
-   version 7
-   tl -499.055 1482.042
-   ins {
-    ConnectionsClass connections {
-     id 5
-     links {
-      ConnectionClass connection {
-       id 108556
-       port 1
-      }
-     }
-    }
-   }
-   pi {
-    33 0
-   }
-   Volume -9
-   Pitch -2
-   Samples {
-    AudioBankSampleClass Sample {
-     Filename "{3B59A059AE46D841}Sounds/Vehicles/Rotary/Samples/AUS_UH60_Engine_Shutdown.wav"
-    }
-   }
-  }
-  BankLocalClass {
-   id 157700
-   name "Turbine - Cockpit"
-   version 7
-   tl -527.032 186.011
-   ins {
-    ConnectionsClass connections {
-     id 0
-     links {
-      ConnectionClass connection {
-       id 158733
-       port 2
-      }
-     }
-    }
-    ConnectionsClass connections {
-     id 1
-     links {
-      ConnectionClass connection {
-       id 94221
-       port 385
-      }
-     }
-    }
-   }
-   pi {
-    3 0
-   }
-   pu {
-    3 0
-   }
-   Volume -3
-   Pitch -2
-   "Loop count" 255
-   "Infinite loop" 1
-   "Termination Fade Out" 3000
-   "Fade in time" 1000
-   Samples {
-    AudioBankSampleClass Sample {
-     Filename "{42E1B248A8181325}Sounds/Vehicles/Rotary/Samples/In Cockpit/AUS_UH60_Engine_Cpt_Loop.wav"
-    }
-   }
-  }
-  BankLocalClass {
-   id 159748
-   name "Main Rotor On Load - Cockpit"
-   version 7
-   tl -767.826 -1022.609
-   ins {
-    ConnectionsClass connections {
-     id 0
-     links {
-      ConnectionClass connection {
-       id 160781
-       port 2
-      }
-     }
-    }
-    ConnectionsClass connections {
-     id 1
-     links {
-      ConnectionClass connection {
-       id 94221
-       port 105
-      }
-     }
-    }
-   }
-   pi {
-    3 0
-   }
-   pu {
-    3 0
-   }
-   "Loop count" 255
-   "Infinite loop" 1
-   "Termination Fade Out" 300
-   Samples {
-    AudioBankSampleClass Sample {
-     Filename "{9E0BA5F744EE641E}Sounds/Vehicles/Rotary/Samples/In Cockpit/AUS_UH60_Cpt_RotorPlus_Loop.wav"
-    }
-   }
-  }
-  BankLocalClass {
-   id 161796
-   name "Main Rotor Off Load - Cockpit"
-   version 7
-   tl -768.998 -1218.147
-   ins {
-    ConnectionsClass connections {
-     id 0
-     links {
-      ConnectionClass connection {
-       id 162829
-       port 2
-      }
-     }
-    }
-    ConnectionsClass connections {
-     id 1
-     links {
-      ConnectionClass connection {
-       id 94221
-       port 105
-      }
-     }
-    }
-   }
-   pi {
-    3 0
-   }
-   pu {
-    3 0
-   }
-   "Loop count" 255
-   "Infinite loop" 1
-   "Termination Fade Out" 300
-   Samples {
-    AudioBankSampleClass Sample {
-     Filename "{9E0BA5F744EE641E}Sounds/Vehicles/Rotary/Samples/In Cockpit/AUS_UH60_Cpt_RotorPlus_Loop.wav"
-    }
-   }
-  }
-  BankLocalClass {
-   id 163844
-   name "Vibration/Rattle - Cockpit Only"
-   version 7
-   tl -508.3 -166.75
-   ins {
-    ConnectionsClass connections {
-     id 0
-     links {
-      ConnectionClass connection {
-       id 158733
-       port 2
-      }
-     }
-    }
-    ConnectionsClass connections {
-     id 1
-     links {
-      ConnectionClass connection {
-       id 94221
-       port 385
-      }
-     }
-    }
-    ConnectionsClass connections {
-     id 5
-     links {
-      ConnectionClass connection {
-       id 108556
-       port 1
-      }
-     }
-    }
-   }
-   pi {
-    35 0
-   }
-   Volume -12
-   "Loop count" 255
-   "Infinite loop" 1
-   "Termination Fade Out" 3000
-   Silence 4500
-   "Fade in time" 3000
-   Samples {
-    AudioBankSampleClass Sample {
-     Filename "{9114A3D06FA8AAC6}Sounds/Vehicles/Rotary/Samples/In Cockpit/AUS_UH60_Cpt_Rattle_Loop.wav"
+     Filename "{D66553D6AE96E84A}Sounds/Vehicles/Helicopters/Mi-8MT/Samples/Vehicles_Mi-8MT_TailRotor_LP.wav"
     }
    }
   }
@@ -3501,5 +2716,5 @@ AudioClass {
  }
  version 1
  sourcesLimit 6
- listenerWindowModel "{4B5EC76DD5A0F110}Assets/Vehicles/Helicopters/AUS_MH60/AUS_UH60_Base.xob"
+ listenerWindowModel "{7FF449DB9ED11DB4}Assets/Vehicles/Helicopters/UH1H/UH1H_base.xob"
 }
