@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{8563B1C0C6C34D77}Sounds/Vehicles/Rotary/Vehicles_AUS_UH60_Rotor_Turbine_Custom.acp"
+ Configurations {
+  AudioProjectResourceClass PC {
+  }
+  AudioProjectResourceClass XBOX_ONE : PC {
+  }
+  AudioProjectResourceClass XBOX_SERIES : PC {
+  }
+  AudioProjectResourceClass PS4 : PC {
+  }
+  AudioProjectResourceClass PS5 : PC {
+  }
+  AudioProjectResourceClass HEADLESS : PC {
+  }
+ }
+}

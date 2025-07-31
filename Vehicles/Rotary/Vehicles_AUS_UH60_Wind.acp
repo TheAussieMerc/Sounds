@@ -111,10 +111,11 @@ AudioClass {
    pi {
     1 0
    }
+   volume_dB -15
    outState 7179
    outStatePort 17415
-   transformation Offset
-   offset -1.7 1.6 0.45
+   transformation Bone
+   boneName "v_door_L_01"
    Type Box
    Scale 0.5 1.5 1.3
   }
@@ -145,10 +146,11 @@ AudioClass {
    pi {
     1 0
    }
+   volume_dB -15
    outState 7179
    outStatePort 17415
-   transformation Offset
-   offset 1.7 1.6 0.45
+   transformation Bone
+   boneName "v_door_R_01"
    Type Box
    Scale 0.5 1.5 1.3
   }
@@ -220,7 +222,7 @@ AudioClass {
    }
    path "{B764D803219C775E}Sounds/FinalMix.afm"
    inputs {
-    "WPN_Handling" "WPN_Shots" "WPN_Explosions" "WNP_BulletHits" "CHAR" "ENV_AMB_2D" "VEH_Animations" "Impacts" "Dialogue" "Music" "ENV_Doors" "VEH_Engine" "VEH_Tires" "VON" "SFX" "SFX_Reverb" "VON_Reverb" "Dialogue_Reverb" "Impacts_EXT" "ENV_AMB_3D" "WPN_SonicCracks" "CHAR_Gear" "PA" "SFX_Reverb_Exterior" "UI" "ENV_AMB_3D_Reverb_Exterior" "SFX_Direct" "SFX_Reverb_Small" "SFX_Reverb_Medium" "SFX_Reverb_Large"
+    "WPN_Handling" "WPN_Shots" "WPN_Explosions" "WNP_BulletHits" "CHAR" "ENV_AMB_2D" "VEH_Animations" "Impacts" "Dialog" "Music" "ENV_Doors" "VEH_Engine" "VEH_Tires" "VON" "SFX" "SFX_Reverb" "VON_Reverb" "Dialog_Reverb" "Impacts_EXT" "ENV_AMB_3D" "WPN_SonicCracks" "CHAR_Gear" "PA" "SFX_Reverb_Exterior" "UI" "ENV_AMB_3D_Reverb_Exterior" "SFX_Direct" "SFX_Reverb_Small" "SFX_Reverb_Medium" "SFX_Reverb_Large" "WPN_Shots_Player" "Dialog_Reverb_Small" "Dialog_Reverb_Medium" "Dialog_Reverb_Large" "WPN_TravelingProjectile" "Dialog_Delay_Exterior" "SFX_Reverb_InCabin"
    }
   }
  }
@@ -370,7 +372,7 @@ AudioClass {
    id 2052
    name "Wind Door"
    version 7
-   tl -512 -256
+   tl -514 -258
    ins {
     ConnectionsClass connections {
      id 0
@@ -388,6 +390,7 @@ AudioClass {
    pu {
     1 0
    }
+   Volume -12
    "Loop count" 255
    "Infinite loop" 1
    "Termination Fade Out" 500
@@ -421,7 +424,7 @@ AudioClass {
    pu {
     1 0
    }
-   Volume 2
+   Volume -15
    "Loop count" 255
    "Infinite loop" 1
    "Termination Fade Out" 100
@@ -456,7 +459,7 @@ AudioClass {
    pu {
     1 0
    }
-   Volume -8
+   Volume -15
    "Loop count" 255
    "Infinite loop" 1
    "Termination Fade Out" 100
@@ -498,5 +501,5 @@ AudioClass {
   }
  }
  version 1
- listenerWindowModel "{7FF449DB9ED11DB4}Assets/Vehicles/Helicopters/UH1H/UH1H_base.xob"
+ listenerWindowModel "{4B5EC76DD5A0F110}Assets/Vehicles/Helicopters/AUS_MH60/AUS_UH60_Base.xob"
 }
