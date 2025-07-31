@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{589A307F972AEDF3}Sounds/_SharedData/Signals/Weapons/Weapon_OpenBoltFakeHandler.sig"
+ Configurations {
+  AudioSignalResourceClass PC {
+  }
+  AudioSignalResourceClass XBOX_ONE : PC {
+  }
+  AudioSignalResourceClass XBOX_SERIES : PC {
+  }
+  AudioSignalResourceClass PS4 : PC {
+  }
+  AudioSignalResourceClass PS5 : PC {
+  }
+  AudioSignalResourceClass HEADLESS : PC {
+  }
+ }
+}
