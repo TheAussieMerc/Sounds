@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{2AE3EF6E914424AB}Sounds/Weapons/Machineguns/AUS_Weapons_Machineguns_M134_Shot.sig"
+ Name "{2F2FEB977AEFD7BC}Sounds/Weapons/Machineguns/WeaponStartDetector.sig"
  Configurations {
   AudioSignalResourceClass PC {
   }

@@ -1073,7 +1073,7 @@ AudioClass {
   SignalClass {
    id 545805
    name "AL Stop Multiplier"
-   tl 1168.065 -1107.594
+   tl 1042.136 -1069.116
    res "{E369C0324A0BE21D}Sounds/_SharedData/Signals/SimpleHelpers/Multiply_2_inputs_UH60_1.sig"
    conns {
     IOPConnectionClass iopConnection {
@@ -1177,7 +1177,7 @@ AudioClass {
   SignalClass {
    id 547853
    name "3p Stop Multiplier"
-   tl 1134.953 -159.983
+   tl 1130.327 -187.74
    res "{0D7D1123A34E3CFD}Sounds/_SharedData/Signals/SimpleHelpers/Multiply_2_inputs_UH60_3.sig"
    conns {
     IOPConnectionClass iopConnection {
@@ -1975,14 +1975,6 @@ AudioClass {
      id 64
      links {
       ConnectionClass connection {
-       id 508932
-       port 65
-      }
-      ConnectionClass connection {
-       id 537604
-       port 65
-      }
-      ConnectionClass connection {
        id 540676
        port 65
       }
@@ -1991,7 +1983,7 @@ AudioClass {
        port 65
       }
       ConnectionClass connection {
-       id 544772
+       id 508932
        port 65
       }
      }
@@ -4479,8 +4471,8 @@ AudioClass {
      id 0
      links {
       ConnectionClass connection {
-       id 353293
-       port 121
+       id 381965
+       port 7
       }
      }
     }
@@ -4784,8 +4776,6 @@ AudioClass {
    "Infinite loop" 1
    Resampler Point
    Offset 140
-   "Fade in time" 25
-   "Fade out time" 25
    Samples {
     AudioBankSampleClass Sample {
      Filename "{FA5A10A840EA4825}Sounds/Weapons/Machineguns/Samples/AUS_MinigunM134_Fire_Loop.wav"
@@ -4879,6 +4869,17 @@ AudioClass {
    name "M134 AL Stop"
    version 7
    tl 1447.593 -1053.977
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 545805
+       port 2
+      }
+     }
+    }
+   }
    pi {
     33 0
    }
@@ -4899,6 +4900,17 @@ AudioClass {
    name "M134 InHelo 1p Stop"
    version 7
    tl 1446.052 -439.058
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 546829
+       port 2
+      }
+     }
+    }
+   }
    pi {
     33 0
    }
@@ -4941,10 +4953,7 @@ AudioClass {
    pi {
     33 0
    }
-   Volume -60
    "Terminate Loop" 0
-   "Fade in time" 1
-   "Fade out time" 1
    Samples {
     AudioBankSampleClass Sample {
      Filename "{D1065426666EFD4E}Sounds/Weapons/Machineguns/Samples/AUS_MinigunM134_Stop.wav"

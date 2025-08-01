@@ -1,0 +1,247 @@
+AudioClass {
+ signals {
+  SignalClass {
+   id 10253
+   name "Signal 10"
+   tl 38.295 -212.29
+   res "{2AE3EF6E914424AB}Sounds/Weapons/Machineguns/AUS_Weapons_Machineguns_M134_Shot.sig"
+   conns {
+    IOPConnectionClass iopConnection {
+     port 1
+     conn {
+      ConnectionsClass connections {
+       id 26
+       links {
+        ConnectionClass connection {
+         id 1054
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 3
+     conn {
+      ConnectionsClass connections {
+       id 26
+       links {
+        ConnectionClass connection {
+         id 2078
+         port 65
+        }
+       }
+      }
+     }
+    }
+    IOPConnectionClass iopConnection {
+     port 4
+     conn {
+      ConnectionsClass connections {
+       id 26
+       links {
+        ConnectionClass connection {
+         id 3102
+         port 65
+        }
+       }
+      }
+     }
+    }
+   }
+   inputsport {
+    1 3 4
+   }
+   outputsport {
+    2
+   }
+   inputvalues {
+    0 0 0
+   }
+   inputvaluesmin {
+    0 0 0
+   }
+   inputvaluesmax {
+    1 1 1
+   }
+   path "{2AE3EF6E914424AB}Sounds/Weapons/Machineguns/AUS_Weapons_Machineguns_M134_Shot.sig"
+  }
+ }
+ vars {
+  VariableClass {
+   id 1054
+   name "Firing"
+   version 5
+   tl -189.505 -254.39
+  }
+  VariableClass {
+   id 2078
+   name "VehicleFireReleased"
+   version 5
+   tl -189.355 -169.99
+  }
+  VariableClass {
+   id 3102
+   name "Empty"
+   version 5
+   tl -190.505 -79.74
+  }
+ }
+ sounds {
+  SoundClass {
+   id 9225
+   name "SOUND_SHOT"
+   version 5
+   tl 593.75 -269.2
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 7201
+       port 65
+      }
+     }
+    }
+   }
+   outState 11275
+   outStatePort 7175
+  }
+ }
+ switches {
+  SwitchClass {
+   id 7201
+   name "Switch 7"
+   version 5
+   tl 326.1 -226.5
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 10253
+       port 2
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 4005806
+     links {
+      ConnectionClass connection {
+       id 5124
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 4367222
+     links {
+      ConnectionClass connection {
+       id 6148
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 161568238
+     links {
+      ConnectionClass connection {
+       id 4100
+       port 65
+      }
+     }
+    }
+   }
+   ports {
+    PortClass Start {
+     default 1
+    }
+    PortClass Loop {
+     min 1
+     max 1
+    }
+    PortClass Stop {
+     min 2
+     max 2
+    }
+   }
+  }
+ }
+ mixers {
+  MixerClass {
+   id 11275
+   name "OutputState 11"
+   version 4
+   tl 888.95 -212.75
+   res "{B764D803219C775E}Sounds/FinalMix.afm"
+   ins {
+    ConnectionsClass connections {
+     id 7175
+     links {
+      ConnectionClass connection {
+       id 9225
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    2 0
+   }
+   path "{B764D803219C775E}Sounds/FinalMix.afm"
+   inputs {
+    "WPN_Handling" "WPN_Shots" "WPN_Explosions" "WNP_BulletHits" "CHAR" "ENV_AMB_2D" "VEH_Animations" "Impacts" "Dialog" "Music" "ENV_Doors" "VEH_Engine" "VEH_Tires" "VON" "SFX" "SFX_Reverb" "VON_Reverb" "Dialog_Reverb" "Impacts_EXT" "ENV_AMB_3D" "WPN_SonicCracks" "CHAR_Gear" "PA" "SFX_Reverb_Exterior" "UI" "ENV_AMB_3D_Reverb_Exterior" "SFX_Direct" "SFX_Reverb_Small" "SFX_Reverb_Medium" "SFX_Reverb_Large" "WPN_Shots_Player" "Dialog_Reverb_Small" "Dialog_Reverb_Medium" "Dialog_Reverb_Large" "WPN_TravelingProjectile" "Dialog_Delay_Exterior" "SFX_Reverb_InCabin"
+   }
+  }
+ }
+ banks_local {
+  BankLocalClass {
+   id 4100
+   name "Start1P"
+   version 7
+   tl 37.045 -91.94
+   Selection Random
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{3F24E997F9BCEBA6}Sounds/Weapons/Machineguns/Samples/AUS_MinigunM134_Start_Close.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 5124
+   name "Loop1P"
+   version 7
+   tl 38.045 -8.94
+   ins {
+    ConnectionsClass connections {
+     id 4
+    }
+   }
+   pi {
+    16 0
+   }
+   "Loop count" 255
+   "Infinite loop" 1
+   Selection Random
+   Resampler Point
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{FA5A10A840EA4825}Sounds/Weapons/Machineguns/Samples/AUS_MinigunM134_Fire_Loop.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 6148
+   name "Stop1P"
+   version 7
+   tl 40.045 78.06
+   Selection Random
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{D1065426666EFD4E}Sounds/Weapons/Machineguns/Samples/AUS_MinigunM134_Stop.wav"
+    }
+   }
+  }
+ }
+ version 1
+}
